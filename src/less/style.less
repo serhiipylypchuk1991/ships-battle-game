@@ -1,0 +1,75 @@
+@import "mixin.less";//импортирует стили (в даном случае миксины) из указаного файла
+
+@position_left_right:70px;
+@game_room_width:1040px;
+@game_room_height:505px;
+
+*{ margin:0;  padding:0; }
+
+#GameRoom{
+	position:relative;
+	top:30px;
+	border:1px solid white;
+	margin:auto;
+}
+
+.style1{
+	width:@game_room_width;
+	height:@game_room_height;
+
+			#FildBattlePlayer {
+				.fildStyleMixin(56px);	//(@cell_size)
+				left:@position_left_right;
+			}
+
+			#FildBattleRival {
+				.fildStyleMixin(26px);	//(@cell_size)
+				right:@position_left_right;
+				cursor:pointer !important;
+			}
+
+			#ShipsPort{
+				.portStyleMixin(55px); //(@fild1_cell_size)
+			}
+
+			#GameMenu{
+				.menuStyleMixin(223px, 240px); //(@menu_width, @menu_height)
+				right:@position_left_right;
+			}
+
+			.statistic{
+				.statisticsStyleMixin(160px); //(@statistics_width);
+				right:320px;
+			}
+}
+
+
+.style2{
+			width:@game_room_width;
+			height:@game_room_height;
+
+			#FildBattlePlayer{
+				.fildStyleMixin(26px);	//(@cell_size)
+				left:@position_left_right;
+			}
+
+			#FildBattleRival {
+				.fildStyleMixin(56px);	//(@cell_size)
+				right:@position_left_right;
+				cursor:pointer !important;
+			}
+
+			#ShipsPort{
+				.portStyleMixin(25px); //(@fild1_cell_size)
+			}
+
+			#GameMenu{
+				.menuStyleMixin(223px, 240px); //(@menu_width, @menu_height)
+				left:@position_left_right;
+			}
+
+			.statistic{
+				.statisticsStyleMixin(160px); //(@statistics_width);
+				left:320px;
+			}
+}

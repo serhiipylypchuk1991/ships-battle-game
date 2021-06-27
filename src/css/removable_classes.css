@@ -1,0 +1,30 @@
+/*здесь находятся классы, которые нужно вешать на елементы*/
+
+.hoverCell{
+	background: rgba(139, 138, 178, 0.7) !Important; /*серо - голубой цвет*/
+}
+
+.lockCell{
+	background: rgba(215, 44, 44, 0.6) !Important;/*розовый, более прозрачьный цвет*/
+}
+
+.activeButton{
+	background: rgba(0, 74, 0, 0.7) !Important;	/*зеленый цвет*/
+}
+
+.mishitShot{
+	background: rgba(215, 44, 44, 0.7) !Important;/*розовый, менеее прозрачьный цвет*/		
+}
+
+.accurateShot{
+	background: rgba(0, 0, 0, 0.8) !Important;/*темный цвет*/
+}
+
+.hideElement{
+	display:none !Important;
+}
+
+.opponentShips{
+	background: rgba(0, 0, 0, 0.8) !Important;/*темный цвет*/
+}
+

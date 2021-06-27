@@ -1,0 +1,58 @@
+/*стили для всплывающих сообщений*/
+#lockBody{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index:1000000;
+
+	.messageBox{
+		position:relative;
+		top:60px;
+		padding:4%;
+		width:280px;
+		min-height:50px;
+		max-height:280px;
+		margin:auto;
+		border-radius:10px;
+		background:white;
+		font-size:17pt;
+		text-align:center;
+	}
+
+	.confirmBox{
+		position:relative;
+		top:40px;
+		padding:30px;
+		min-width:250px;
+		max-width:800px;
+		min-height:50px;
+		max-height:300px;
+		margin:auto;
+		border-radius:10px;
+		background:white;
+		font-size:14pt;
+		text-align:justify;
+
+		button{
+			position:absolute;
+			display:block;
+			top:5px;
+			right:5px;
+			width:25px;
+			height:25px;
+			outline:none;
+			border-radius:50px;
+			background:#d9d9d9;
+			-webkit-transition:background 2s, transform 2s;
+			transition:background 2s, transform 2s;
+			&:hover{
+				background:red;
+				-webkit-transform: rotate(180deg); /* Safari */
+				transform: rotate(180deg);
+			}
+		}
+	}
+}

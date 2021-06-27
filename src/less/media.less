@@ -1,0 +1,126 @@
+
+@import "mixin.less";//импортирует стили (в даном случае миксины) из указаного файла
+@import "style.less";//импортирует стили  из указаного файла
+
+/*медиазапрос для экрана шириной 1000px*/
+@media screen and (max-width:1050px) {
+
+	@position_left_right:55px;
+	@game_room_width:863px;
+	@game_room_height:415px;
+
+	#GameRoom.style1{
+		width:@game_room_width;
+		height:@game_room_height;
+
+		#FildBattlePlayer {
+			.fildStyleMixin(45px);	//(@cell_size)
+			left:@position_left_right;
+		}
+
+		#FildBattleRival {
+			.fildStyleMixin(19px);	//(@cell_size)
+			right:@position_left_right;
+		}
+
+		#ShipsPort{
+			.portStyleMixin(44px); //(@fild1_cell_size)
+		}
+
+		#GameMenu{
+			.menuStyleMixin(168px, 205px); //(@menu_width, @menu_height)
+			right:@position_left_right;
+		}
+
+		.statistic{
+			.statisticsStyleMixin(160px); //(@statistics_width);
+			right:247px;
+		}
+	}
+
+	#GameRoom.style2{
+		width:@game_room_width;
+		height:@game_room_height;
+
+		#FildBattlePlayer {
+			.fildStyleMixin(19px);	//(@cell_size)
+			left:@position_left_right;
+		}
+
+		#FildBattleRival {
+			.fildStyleMixin(45px);	//(@cell_size)
+			right:@position_left_right;
+
+		}
+
+		#ShipsPort{
+			.portStyleMixin(19px); //(@fild1_cell_size)
+		}
+
+		#GameMenu{
+			.menuStyleMixin(168px, 205px); //(@menu_width, @menu_height)
+			left:@position_left_right;
+		}
+
+		.statistic{
+			.statisticsStyleMixin(160px); //(@statistics_width);
+			left:247px;
+		}
+	}
+
+}
+
+
+
+
+/*медиазапрос для экрана шириной 900px*/
+@media screen and (max-width:865px) {
+
+	@position_left_right:55px;
+	@game_room_width:485px;
+	@game_room_height:745px;
+
+	#GameRoom.style1{
+				top:0;
+				width:@game_room_width;
+				height:@game_room_height;
+
+				#FildBattleRival {
+					top:405px;
+				}
+
+				#GameMenu{
+					.menuStyleMixin(168px, 150px); //(@menu_width, @menu_height)
+				}
+
+				.statistic{
+					.statisticsStyleMixin(160px); //(@statistics_width);
+					right:267px;
+					top:405px;
+					bottom:8px;
+				}
+
+	}
+
+	#GameRoom.style2{
+	  top:0;
+		width:@game_room_width;
+		height:@game_room_height;
+
+		#FildBattlePlayer {
+			top:405px;
+		}
+
+		#GameMenu{
+			.menuStyleMixin(168px, 150px); //(@menu_width, @menu_height)
+		}
+
+		.statistic{
+			.statisticsStyleMixin(160px); //(@statistics_width);
+			left:267px;
+			top:405px;
+			bottom:8px;
+		}
+	}
+	
+}

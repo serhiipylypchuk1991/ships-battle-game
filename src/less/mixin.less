@@ -1,0 +1,107 @@
+
+@top_bottom_position:20px;
+
+/*миксин для полей сражения*/
+.fildStyleMixin(@cell_size) {		//устанавливается рaзмер ячейки @cell_size в пикселях
+	@fild_size:(@cell_size+2)*8; 	//размер поля расчитывается исходя из размера ячейки
+	width:@fild_size;
+	height:@fild_size;
+	position:absolute;
+	top:@top_bottom_position;
+	background-image:url(../components/images/water_animation.gif);
+	background-size: cover;
+
+	div.cell{
+		width:@cell_size;
+		height:@cell_size;
+		float:left;
+		margin:1px;
+		background:rgba(230, 230, 230, 0.4);
+		border-radius:5px;
+
+		img{
+			width:@cell_size;
+			height:@cell_size;
+		}
+	}
+}
+
+/*миксин для порта, в котором стоят корабли перед расстановкой*/
+.portStyleMixin(@fild1_cell_size){
+	width:@fild1_cell_size;
+	height:(@fild1_cell_size+2)*8;
+	//border:1px solid red;
+	position:relative;
+	top:@top_bottom_position;
+	left:7px;//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+	div,img{
+		width:@fild1_cell_size+(-4);
+		height:@fild1_cell_size+(-4);
+		margin-top:5px;
+		z-index:1;
+	}
+}
+
+.menuStyleMixin(@menu_width, @menu_height){
+	width:@menu_width;
+	height:@menu_height;
+	bottom:@top_bottom_position;
+	position:absolute;
+	//border:1px solid red;
+
+	button{
+		width: 100%;
+		height:21%;
+		display:block;
+		margin:auto;
+		margin-top:9px;
+		//border-radius:5px !important;
+		outline:none;
+
+		text-align:left;
+		letter-spacing: 1px;
+
+		span{
+			display:inline-block;
+			width:50px;
+		}
+	}
+}
+
+.statisticsStyleMixin(@statistics_width){
+	width:@statistics_width;
+	position:absolute;
+	top:@top_bottom_position;
+	bottom:@top_bottom_position;
+	border:1px solid black;
+	//background-color:gray;
+	//color:green;
+	border-radius:5px;
+
+	.my_resolt, .op_resolt{
+		width:100%;
+		height:49%;
+		position:relative;
+
+		i{
+			display:inline-block;
+			width:90%;
+			padding:5%;
+			text-align:center;
+		}
+
+		span{
+			display:inline-block;
+			width:46%;
+			margin-top:5%;
+			padding-left:5px;;
+			font-size:14pt;
+		}
+		span:nth-child(odd){
+			//background-color:red !important;
+			width:60px;
+			text-align:right;
+		}
+	}
+}
