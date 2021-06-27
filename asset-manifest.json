@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ships-battle-react-app/static/css/main.f74900fe.chunk.css",
+    "main.js": "/ships-battle-react-app/static/js/main.ddb939b9.chunk.js",
+    "main.js.map": "/ships-battle-react-app/static/js/main.ddb939b9.chunk.js.map",
+    "runtime-main.js": "/ships-battle-react-app/static/js/runtime-main.f3d9b9cb.js",
+    "runtime-main.js.map": "/ships-battle-react-app/static/js/runtime-main.f3d9b9cb.js.map",
+    "static/js/2.b280e1fc.chunk.js": "/ships-battle-react-app/static/js/2.b280e1fc.chunk.js",
+    "static/js/2.b280e1fc.chunk.js.map": "/ships-battle-react-app/static/js/2.b280e1fc.chunk.js.map",
+    "index.html": "/ships-battle-react-app/index.html",
+    "static/css/main.f74900fe.chunk.css.map": "/ships-battle-react-app/static/css/main.f74900fe.chunk.css.map",
+    "static/js/2.b280e1fc.chunk.js.LICENSE.txt": "/ships-battle-react-app/static/js/2.b280e1fc.chunk.js.LICENSE.txt",
+    "static/js/main.ddb939b9.chunk.js.LICENSE.txt": "/ships-battle-react-app/static/js/main.ddb939b9.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.css": "/ships-battle-react-app/static/media/fontawesome-webfont.f7f1738c.woff",
+    "static/media/ship.cdfc5979.png": "/ships-battle-react-app/static/media/ship.cdfc5979.png",
+    "static/media/shut_animation.10a2bb90.gif": "/ships-battle-react-app/static/media/shut_animation.10a2bb90.gif",
+    "static/media/app.less": "/ships-battle-react-app/static/media/water_animation.8d80eed3.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f3d9b9cb.js",
+    "static/js/2.b280e1fc.chunk.js",
+    "static/css/main.f74900fe.chunk.css",
+    "static/js/main.ddb939b9.chunk.js"
+  ]
+}
